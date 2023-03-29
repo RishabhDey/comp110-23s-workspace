@@ -12,7 +12,7 @@ def test_invert3():
 def test_favorite_color1():
     favorite_color({"Marc": "yellow", "Ezri": "blue", "Kris": "blue"})
 
- def test_favorite_color2():
+def test_favorite_color2():
     favorite_color({"Marc": "yellow", "Ezri": "yellow", "Kris": "yellow"})
 
 def test_favorite_color3():

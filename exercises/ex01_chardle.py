@@ -13,6 +13,7 @@ if (len(sx) != 1):
 print("Searching for " + sx + " in " + x)
 
 
+
 total = 0
 if (x[0] == sx):
     total += 1
