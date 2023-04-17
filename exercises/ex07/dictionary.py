@@ -1,10 +1,12 @@
 """Hi."""
+
+
 def invert(x: dict[str, str]) -> dict[str, str]:
     """Invert."""
-    keycheck = list(x.values())
+    keycheck: list[str] = list(x.values())
     
-    if(max(keycheck, key = keycheck.count) ==1):
-        final = {x[key]: key for key in x}
+    if (max(keycheck, key=keycheck.count) == 1):
+        final: dict[str, str] = {x[key]: key for key in x}
         return final
     else:
         raise KeyError()
@@ -12,16 +14,16 @@ def invert(x: dict[str, str]) -> dict[str, str]:
 
 def favorite_color(x: dict[str, str]) -> str:
     """Fav."""
-    return max(x.values(), key = list(x.values()).count)
+    return max(x.values(), key=list(x.values()).count)
 
 
 def count(x: list[str]) -> dict[str, int]:
     """count."""
-    final = {}
+    final: dict[str, int] = dict()
     
     for x1 in x:
-        if(x1 in final):
-            final[x1] +=1
+        if (x1 in final):
+            final[x1] += 1
         else:
             final[x1] = 1
             
